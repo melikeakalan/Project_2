@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "YeniSinav";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+    <form method="post" class="form-group">
+        <div>
+            <label>Öğrenci ID</label>
+            <input type="text" class="form-control" name="OGRID" />
+        </div>
+        <div style="margin-top:10px">
+            <label>Ders Adı</label>
+            <input type="text" class="form-control" name="DERSID" />
+        </div>
+        <div style="margin-top:10px">
+            <label>Sınav 1</label>
+            <input type="text" class="form-control" name="SINAV1" />
+        </div>
+        <div style="margin-top:10px">
+            <label>Sınav 2</label>
+            <input type="text" class="form-control" name="SINAV2" />
+        </div>
+        <div style="margin-top:10px">
+            <label>Sınav 3</label>
+            <input type="text" class="form-control" name="SINAV3" />
+        </div>
+        <div style="margin-top:10px">
+            <label>Proje</label>
+            <input type="text" class="form-control" name="PROJE" />
+        </div>
+        <div style="margin-top:10px">
+            <label>Ortalama</label>
+            <input type="text" class="form-control" name="ORTALAMA" />
+        </div>
+        <div style="margin-top:10px">
+            <button class="btn btn-primary">Sınav Ekle</button>
+        </div>
+        <div>
+            @*Burdaki Islem bizim class taki değerimiz
+            yani Islem e gore hareket edecek hesaplaysa şunu  yap*@
+            <button type="submit" name="Islem" value="HESAPLA" class="btn btn-default">
+                Hesapla
+            </button>
+            <br /> <br />
+            <button type="submit" name="Islem" value="NOTGUNCELLE" class="btn btn-info">
+                Güncelle
+            </button>
+            Sonuç=@ViewBag.ort
+        </div>
+    </form>
+</div>
+
+

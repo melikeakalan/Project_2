@@ -1,0 +1,49 @@
+﻿@model OgrenciNotMvc.Models.EntityFramework.TBLNOTLAR
+@{
+    ViewBag.Title = "NotGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("NotGetir", "Notlar", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.OGRID)
+        @Html.TextBoxFor(m => m.OGRID, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SINAV1)
+        @Html.TextBoxFor(m => m.SINAV1, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SINAV2)
+        @Html.TextBoxFor(m => m.SINAV2, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.SINAV3)
+        @Html.TextBoxFor(m => m.SINAV3, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.PROJE)
+        @Html.TextBoxFor(m => m.PROJE, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.ORTALAMA)
+        @Html.TextBoxFor(m => m.ORTALAMA, new { @Value = ViewBag.ort, @class = "form-control" })
+    </div>
+   
+    @Html.HiddenFor(m => m.NOTID)
+    <div>
+        @*Burdaki Islem bizim class taki değerimiz
+            yani Islem e gore hareket edecek hesaplaysa şunu  yap*@
+        <button type="submit" name="Islem" value="HESAPLA" class="btn btn-default">
+            Hesapla
+        </button>
+        <br /> <br />
+        <button type="submit" name="Islem" value="NOTGUNCELLE" class="btn btn-info">
+            Güncelle
+        </button>
+        Sonuç=@ViewBag.ort
+    </div>
+
+}
+

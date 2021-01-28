@@ -1,0 +1,22 @@
+﻿@model OgrenciNotMvc.Models.EntityFramework.TBLKULUPLER
+@{
+    ViewBag.Title = "KulupGetir";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@*Html.BeginForm başlangıç formu, form ilk yüklendiğinde 3 parametreli değerim var bunlar; hangi ActionResult un çalışacağı, bu ActionResult nerden çalışacağı(hangi Controller da olcak), hangi metotla çalışacak(form post olduğunda çalışacak).*@
+@using (Html.BeginForm("Guncelle", "Kulupler", FormMethod.Post))
+{
+<div class="form-group">
+
+    @Html.LabelFor(m => m.KULUPAD)
+    @Html.TextBoxFor(m => m.KULUPAD, new { @class = "form-control" })
+    @Html.LabelFor(m => m.KULUPKONTENJAN)
+    @Html.TextBoxFor(m => m.KULUPKONTENJAN, new { @class = "form-control" })
+</div>
+    @Html.HiddenFor(m => m.KULUPID)
+    <div style="margin-top:15px">
+        <button class="btn btn-info">Güncelle</button>
+    </div>
+}
+
+

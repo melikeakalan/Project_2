@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OgrenciNotMvc", "OgrenciNotMvc\OgrenciNotMvc.csproj", "{BC1EF99F-25A7-468C-BDD5-E6608125843B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC1EF99F-25A7-468C-BDD5-E6608125843B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1EF99F-25A7-468C-BDD5-E6608125843B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1EF99F-25A7-468C-BDD5-E6608125843B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1EF99F-25A7-468C-BDD5-E6608125843B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43CB115B-CA34-4832-9806-1A3F5EE2A8CC}
+	EndGlobalSection
+EndGlobal
